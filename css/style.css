@@ -17,30 +17,39 @@ html {
 
 /* ================= HEADER ================= */
 
-.main-header {
-    background: #2e7d32;
-    color: white;
-    padding: 12px 6%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* NORMAL HEADER */
+.main-header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 90px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: all 0.3s ease;
+  background-color: #2e7d32;
+}
+
+/* LOGO NORMAL */
+.main-header img{
+  height: 55px;
+  transition: all 0.3s ease;
 }
 
 
-.main-header.shrink {
-    padding: 6px 5%;
+/* SCROLL EDİNCE KÜÇÜLEN HAL */
+.main-header.shrink{
+  height: 65px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.main-header.shrink .logo-area img {
-    height: 35px;
+/* LOGO DA KÜÇÜLSÜN */
+.main-header.shrink img{
+  height: 40px;
 }
 
-.main-header.shrink .logo-text {
-    font-size: 16px;
-}
 
 
 .header-left img {
@@ -448,7 +457,7 @@ button:hover, .btn:hover {
 }
 
 .logo-area img {
-    height: 45px;
+    height: 90px;
 }
 
 .logo-text {
