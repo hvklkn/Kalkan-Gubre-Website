@@ -766,3 +766,21 @@ button:hover, .btn:hover {
         text-align: center;
     }
 }
+
+/* ===== SEO TEXT (Kahramanmaraş odaklı içerik) ===== */
+.seo-text{
+    max-width: 1100px;
+    margin: 40px auto 10px;
+    padding: 0 16px;
+    line-height: 1.7;
+  }
+  
+  .seo-text h1{
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .seo-text p{
+    margin: 8px 0;
+    color: #333;
+  }
